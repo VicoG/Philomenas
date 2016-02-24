@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=News+Cycle&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+		<div class="container">
+			<div class="header">
+				<h1>Philomena's</h1>
+			</div>
+			<div class="content">
+				<div id="sbi_container" class="sbi_container">
+					<div class="sbi_panel" data-bg="./images/model2.jpg">
+						<a href="#" class="sbi_label">Men's</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Trailblazing this season.</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="./images/model3.jpg">
+						<a href="#" class="sbi_label">Women's</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Deceptively simple. </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="./images/model4.jpg">
+						<a href="#" class="sbi_label">Accessories</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">All a masterpiece.</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id = address>
+			<p> Via Montenapoleone 5489</p>
+			<p> Milano, IT</p>
+			<p> Phone: 02 7600 0460</p>
+			<p> Hours:3-7pm Mon; 10am-7pm Tue-Sat.</p>
+
+				
+
+			</div>
+
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.bgImageMenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#sbi_container').bgImageMenu({
+					defaultBg	: 'images/model1.jpg',
+					border		: 1,
+					type		: {
+						mode		: 'seqHorizontalSlide',
+						speed		: 250,
+						easing		: 'jswing',
+						seqfactor	: 100
+					}
+				});
+			});
+		</script>
+    </body>
+</html>
